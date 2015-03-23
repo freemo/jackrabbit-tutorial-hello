@@ -17,32 +17,11 @@ import org.apache.jackrabbit.core.TransientRepository;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
     private static final String MESSAGE = "Hello, World!";
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp() throws LoginException, RepositoryException
+    public void testHelloWorld() throws RepositoryException
     {
     	Repository repo = new TransientRepository();
     	Session session = repo.login(
