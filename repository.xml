@@ -99,15 +99,15 @@
         <!--
             This persistance manager stores any persistance information in a derby database.
         -->
-        <!--PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.DerbyPersistenceManager">
+        <PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.DerbyPersistenceManager">
           <param name="url" value="jdbc:derby:${wsp.home}/db;create=true"/>
           <param name="schemaObjectPrefix" value="${wsp.name}_"/>
-        </PersistenceManager-->
+        </PersistenceManager>
         <!--
             This persistance manager stores any persistance information on the filesystem directly.
         -->
-        <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.BundleFsPersistenceManager">
-        </PersistenceManager>
+        <!--PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.BundleFsPersistenceManager">
+        </PersistenceManager-->
         <!--
             Search index and the file system it uses.
             class: FQN of class implementing the QueryHandler interface
@@ -139,15 +139,15 @@
         <!--
             This persistance manager stores any persistance information in a derby database.
         -->
-        <!--PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.DerbyPersistenceManager">
+        <PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.DerbyPersistenceManager">
           <param name="url" value="jdbc:derby:${rep.home}/version/db;create=true"/>
           <param name="schemaObjectPrefix" value="version_"/>
-        </PersistenceManager-->
+        </PersistenceManager>
         <!--
             This persistance manager stores any persistance information on the filesystem directly.
         -->
-        <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.BundleFsPersistenceManager">
-        </PersistenceManager>
+        <!--PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.BundleFsPersistenceManager">
+        </PersistenceManager-->
     </Versioning>
 
     <!--
